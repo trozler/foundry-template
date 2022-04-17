@@ -1,0 +1,4 @@
+# directories
+out
+lib
+**/node_modules
