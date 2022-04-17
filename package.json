@@ -11,7 +11,9 @@
     "lint": "npm run lint:sol && npm run prettier:check",
     "lint:sol": "solhint --config ./.solhint.json --max-warnings 0 \"src/**/*.sol\"",
     "prettier:write": "prettier --write src/**/*.sol",
-    "prettier:check": "prettier --check src/**/*.sol"
+    "prettier:check": "prettier --check src/**/*.sol",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +24,10 @@
     "prettier-plugin-solidity": "^1.0.0-beta.19",
     "solhint": "^3.3.7",
     "solhint-plugin-prettier": "^0.0.5"
+  },
+  "lint-staged": {
+    "**/*.sol": [
+      "solhint --config ./.solhint.json --max-warnings 0 \"src/**/*.sol\" && prettier --write src/**/*.sol"
+    ]
   }
 }
