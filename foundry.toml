@@ -1,6 +1,6 @@
 [default]
 bytecode_hash = "none"
-eth-rpc-url = "<TODO>"
+eth-rpc-url = ""
 libs = ['lib']
 optimizer_runs = 1000000
 out = 'out'
