@@ -33,3 +33,8 @@ When installing dependencies to forge, please include the remapping in `remappin
 ### Inspired by
 
 Inspired by [Rari-Capital/solmate](https://github.com/Rari-Capital/solmate), and [paulberg/solidity-template](https://github.com/paulrberg/solidity-template).
+
+### Resources
+
+https://book.getfoundry.sh/index.html
+https://github.com/foundry-rs/foundry
