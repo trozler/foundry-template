@@ -10,12 +10,6 @@
 **Using Foundry**
 
 ```
-forge install trozler/foundry-template
-```
-
-or
-
-```
 $ git clone https://github.com/trozler/foundry-template.git
 $ cd foundry-template
 
