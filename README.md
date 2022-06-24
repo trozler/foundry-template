@@ -7,8 +7,6 @@
 
 ### How to run
 
-**Using Foundry**
-
 ```
 $ git clone https://github.com/trozler/foundry-template.git
 $ cd foundry-template
