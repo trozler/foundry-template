@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.13;
 
-import "ds-test/test.sol";
+import "forge-std/Test.sol";
 
 import {SampleContract} from "../src/SampleContract.sol";
 
-contract SampleContractTest is DSTest {
+contract SampleContractTest is Test {
     SampleContract public sampleContract;
 
     function setUp() public {
