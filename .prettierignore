@@ -1,1 +1,9 @@
-lib
+**/broadcast
+**/cache
+**/lib
+**/out
+**/node_modules
+
+# files
+*.env
+*.log

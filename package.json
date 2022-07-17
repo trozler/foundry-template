@@ -8,10 +8,11 @@
     "test": "test"
   },
   "scripts": {
-    "lint": "npm run lint:sol && npm run prettier:check",
-    "lint:sol": "solhint --config ./.solhint.json --max-warnings 0 \"src/**/*.sol\"",
-    "prettier:write": "prettier --write src/**/*.sol",
-    "prettier:check": "prettier --check src/**/*.sol",
+    "lint": "npm run solhint && npm run prettier:check",
+    "lint:check": "npm run prettier:check && npm run solhint:check",
+    "prettier:write": "prettier --config \"./.prettierrc.yml\" --write \"**/*.{json,md,sol,yml}\"",
+    "prettier:check": "prettier --config \"./.prettierrc.yml\" --check \"**/*.{json,md,sol,yml}\"",
+    "solhint": "solhint --config ./.solhint.json \"{src,test}/**/*.sol\"",
     "pre-commit": "lint-staged",
     "prepare": "husky install"
   },
@@ -19,16 +20,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.8",
-    "prettier": "^2.6.2",
-    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-dev.23",
     "solhint": "^3.3.7",
     "solhint-plugin-prettier": "^0.0.5"
   },
   "lint-staged": {
     "**/*.sol": [
-      "solhint --config ./.solhint.json --max-warnings 0 \"src/**/*.sol\" && prettier --write src/**/*.sol"
+      "npm run solhint && npm run prettier:write"
     ]
   }
 }

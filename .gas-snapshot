@@ -1,2 +1,3 @@
-SampleContractTest:testFunc1() (gas: 534539)
-SampleContractTest:testFunc2() (gas: 534508)
+SampleContractTest:testExample() (gas: 3407)
+SampleContractTest:testFunc1() (gas: 538590)
+SampleContractTest:testFunc2() (gas: 538514)
