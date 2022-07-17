@@ -44,11 +44,8 @@ jobs:
           forge --version
           forge build --sizes
 
-      - name: Check gas snapshots
-        run: forge snapshot --check
-
       - name: "Run the tests"
-        run: "forge test"
+        run: "forge test --gas-report"
 
       - name: "Add test summary"
         run: |
