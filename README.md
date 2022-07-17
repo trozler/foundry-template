@@ -72,12 +72,12 @@ $ forge script script/SampleContract.s.sol:SampleContract --fork-url http://loca
 
 For instructions on how to deploy to a testnet or mainnet, check out the [Solidity Scripting tutorial](https://book.getfoundry.sh/tutorials/solidity-scripting.html).
 
-### Format
+### Test
 
-Format the contracts with Prettier:
+Run the tests:
 
 ```sh
-$ npm run prettier
+$ forge test
 ```
 
 ### Gas Usage
@@ -102,12 +102,12 @@ Lint the contracts:
 $ npm run lint
 ```
 
-### Test
+### Format
 
-Run the tests:
+Format the contracts with Prettier:
 
 ```sh
-$ forge test
+$ npm run prettier:write
 ```
 
 ### Resources
