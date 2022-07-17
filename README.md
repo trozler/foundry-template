@@ -25,7 +25,7 @@ When installing dependencies to forge, please include the remapping in `remappin
 ### GitHub Actions
 
 This template comes with GitHub Actions pre-configured. Your contracts will be linted and tested on every push and pull
-request made to the `main` branch.
+request made to the `main`/`master` branch.
 
 You can edit the CI script in [.github/workflows/ci.yml](./.github/workflows/ci.yml).
 
@@ -53,13 +53,6 @@ Delete the build artifacts and cache directories:
 $ forge clean
 ```
 
-### Compile
-
-Compile the contracts:
-
-```sh
-$ forge build
-```
 
 ### Deploy
 
