@@ -30,6 +30,9 @@
   "lint-staged": {
     "**/*.sol": [
       "npm run solhint && npm run prettier:write"
+    ],
+    "*.{json,md,yml}": [
+      "npm run prettier:write"
     ]
   }
 }
