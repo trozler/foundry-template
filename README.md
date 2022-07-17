@@ -53,7 +53,6 @@ Delete the build artifacts and cache directories:
 $ forge clean
 ```
 
-
 ### Deploy
 
 Deploy to Anvil:
